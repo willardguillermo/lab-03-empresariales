@@ -28,6 +28,9 @@ class Question(models.Model):
         on_delete=models.CASCADE,
         related_name='questions',
     )
+    # Points this question is worth. Defaults to 1 so existing rows
+    # keep a valid value when this field is added to the table.
+    score = models.PositiveIntegerField(default=1)
 
     class Meta:
         ordering = ['id']
