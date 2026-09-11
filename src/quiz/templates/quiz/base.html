@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Quiz{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            color: #222;
+        }
+        header h1 {
+            font-size: 1.4rem;
+        }
+        header h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+        fieldset {
+            margin-bottom: 1rem;
+        }
+        .correct {
+            font-weight: bold;
+        }
+        .error {
+            color: #b00020;
+        }
+        ul.errorlist {
+            color: #b00020;
+            margin: 0.2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'quiz:exam_list' %}">Quiz</a></h1>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
