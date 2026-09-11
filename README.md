@@ -230,9 +230,8 @@ La aplicación se probó con tres estrategias complementarias:
 
 ## Conclusiones
 
-_[Pendiente: completar con la redacción propia del alumno. Canvas
-exige un mínimo de 2 conclusiones.]_
-
-1. …
-2. …
-3. …
+1. Declarar los modelos Exam, Question y Choice con el tipo de campo correcto para cada atributo (TextField para contenido largo, CharField para texto corto, BooleanField para banderas de verdadero/falso, ForeignKey con on_delete=CASCADE para relaciones de dependencia) permitió que Django generara automáticamente una base de datos consistente, sin necesidad de escribir SQL manualmente ni preocuparse por la integridad referencial entre exámenes, preguntas y opciones.
+   
+2. Las migraciones de Django no son un paso mecánico, sino un historial versionado de cómo evolucionó el modelo de datos: la primera migración (0001_initial.py) creó las tres tablas desde cero, mientras que la segunda (0002_question_score.py) solo agregó una columna a una tabla existente, usando AddField en vez de CreateModel, y requiriendo un valor por defecto para no romper las filas que ya tenían datos. Entender esta diferencia es clave para modificar un proyecto en producción sin perder información.
+   
+3. Los formsets resuelven un problema que un ModelForm normal no puede: validar y guardar en una sola operación un conjunto de objetos dependientes de otro (las 4 opciones de una pregunta). La regla de negocio "exactamente una opción correcta" no se puede expresar a nivel de un solo formulario, sino que debe evaluarse sobre el formset completo después de que Django valide cada formulario individualmente, lo que refuerza la diferencia entre validación de datos (tipos, campos requeridos) y validación de reglas de negocio (lógica propia de la aplicación).
