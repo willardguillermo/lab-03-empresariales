@@ -1,6 +1,6 @@
 # Quiz App — Laboratorio de Desarrollo de Aplicaciones Empresariales
 
-**Alumno:** _[Nombre completo del alumno]_
+GUILLERMO JHERICO WILLARD CASTILLO
 
 ## Descripción del laboratorio
 
@@ -216,13 +216,17 @@ La aplicación se probó con tres estrategias complementarias:
 
 ## Capturas de pantalla
 
-![Lista de exámenes en el admin](docs/screenshots/admin-exam-list.png)
+<img width="1015" height="497" alt="image" src="https://github.com/user-attachments/assets/595a1d2c-166d-42f2-8ee4-89f566d45830" />
 
-![Detalle de una pregunta con sus 4 opciones en el admin](docs/screenshots/admin-question-detail.png)
+<img width="1211" height="590" alt="image" src="https://github.com/user-attachments/assets/5ae46519-8b4e-405b-b677-3118ef52e715" />
 
-![Vista de detalle de un examen en la aplicación](docs/screenshots/app-exam-detail.png)
+<img width="1440" height="811" alt="image" src="https://github.com/user-attachments/assets/d81d8c56-5db1-4577-a224-bfffd97d33e5" />
 
-![Estructura del proyecto en VS Code](docs/screenshots/vscode-project-structure.png)
+<img width="494" height="965" alt="image" src="https://github.com/user-attachments/assets/1eec78ee-00f4-49af-9a1e-574f61509dbe" />
+
+<img width="478" height="180" alt="image" src="https://github.com/user-attachments/assets/333fe1ba-1b94-4a6e-b028-9c97f53ca45e" />
+
+
 
 ## Conclusiones
 
